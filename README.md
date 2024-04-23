@@ -5,10 +5,12 @@ Unfinished.
 
 For CodeWarrior Pro 6.
 
-Probably requires 7.5+
+Probably requires MacOS 7.5+
+
+This was done as a request, and proof of concept of how easy it would be to port random software to classic MacOS.  I chose version 1.0 because it was the smallest, had the least dependencies (which would also need to be ported!) and wouldn't need a modern compiler or build system.
 
 Uses old public domain curses implmentation for Mac, hacked a little (includes original archive).
-Added a couple curses functions that weren't included, but nano needed.
+Added a couple curses functions that weren't there, but nano needed.
 
 Includes, but does not yet use curses implementation from MacLynx.
 (Would be used to start adding mouse support and other features, etc etc)

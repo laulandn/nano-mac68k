@@ -2,6 +2,8 @@ Port of the nano text editor for m68k Macs
 
 Unfinished.
 
+For CodeWarrior Pro 6.
+
 Not a "Mac Friendly" applications.
 
 No mouse support.

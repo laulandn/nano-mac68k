@@ -1,0 +1,117 @@
+.\" Hey, EMACS: -*- nroff -*-
+.\" nano.1 is copyright 1999-2000 by
+.\" Chris Allegretta <chrisa@asty.org>
+.\"
+.\" This is free documentation, see the latest version of the GNU General
+.\" Public License for copying conditions. There is NO warranty.
+.\"
+.\" First parameter, NAME, should be all caps
+.\" Second parameter, SECTION, should be 1-8, maybe w/ subsection
+.\" other parameters are allowed: see man(7), man(1)
+.TH NANO 1 "December 2, 2000"
+.\" Please adjust this date whenever revising the manpage.
+.\"
+.SH NAME
+nano \- Nano's ANOther editor, an enhanced free Pico Clone
+.SH SYNOPSIS
+.B nano
+.RI [options]\ [+LINE] " file"
+.br
+.SH DESCRIPTION
+This manual page documents briefly the
+.B nano
+command.
+.PP
+.\" TeX users may be more comfortable with the \fB<whatever>\fP and
+.\" \fI<whatever>\fP escape sequences to invode bold face and italics, 
+.\" respectively.
+\fBnano\fP is a small, free and friendly editor which aims to replace
+Pico, the default editor included in the non-free Pine package. Rather
+than just copying Pico's look and feel,
+.B nano
+also implements some missing (or disabled by default) features in Pico,
+such as "search and replace" and "goto line number".
+.SH OPTIONS
+.TP
+.B \-T (\-\-tabsize)
+Set the size (width) of a tab.
+.TP
+.B \-R (\-\-regexp)
+Enable regular expression matching for search strings, as well as
+\\n subexpression replacement for replace strings, if available.
+.TP
+.B \-V (\-\-version)
+Show the current version number and author.
+.TP
+.B \-h (\-\-help)
+Display a summary of commandline options.
+.TP
+.B \-c (\-\-const)
+Constantly show the cursor position.
+.TP
+.B \-k (\-\-cut)
+Enable cut from cursor to end of line with ^K.
+.TP
+.B \-i (\-\-autoindent)
+Indent new lines to the previous line's indentation. Useful when editing
+source code.
+.TP
+.B \-l (\-\-nofollow)
+If the file being edited is a symbolic link, replace the link with a 
+a new file, do not follow it.  Good for editing files in /tmp perhaps?
+.TP
+.B \-m (\-\-mouse)
+Enable mouse support (if available for your system).
+.TP
+.B \-p (\-\-pico)
+Emulate Pico as closely as possible.  This affects both the "shortcut list"
+at the bottom of the screen, as well as the display and entry of previous
+search and replace strings.
+.TP
+.B \-s (\-\-speller)
+Enable alternative spell checker command.
+.TP
+.B \-t (\-\-tempfile)
+Always save changed buffer without prompting. Same as Pico -t option.
+.TP
+.B \-v (\-\-view)
+View file (read only) mode.
+.TP
+.B \-w (\-\-nowrap)
+Disable wrapping of long lines.
+.TP
+.B \-x (\-\-nohelp)
+Disable help screen at bottom of editor.
+.TP
+.B \-z (\-\-suspend)
+Enable suspend ability.
+.TP
+.B \-b, \-e, \-f
+Ignored, for compatibility with Pico.
+.TP
+.B \+LINE
+Places cursor at LINE on startup.
+.SH NOTES
+Nano will try to dump the buffer into an emergency file in some cases.
+Mainly, this will happen if Nano recieves a SIGHUP or runs out of
+memory, when it will write the buffer into a file named "nano.save" if the
+buffer didn't have a name already, or will add a ".save" suffix to the
+current finename. Nano will \fBnot\fP write this file if a previous one
+exists in the current directory.
+.SH BUGS
+Please send any comments or bug reports to
+.br
+.B nano@nano-editor.org.
+.br
+The nano mailing list is available from
+.br
+.B nano-devel@lists.sourceforge.net.
+To subscribe, email to nano-devel-request@lists.sourceforge.net with a
+subject of "subscribe".
+.SH HOMEPAGE
+http://www.nano-editor.org
+.SH AUTHOR
+Chris Allegretta <chrisa@asty.org>, et al (see AUTHORS for details).
+This manual page was originally written by Jordi Mallach
+<jordi@sindominio.net>, for the Debian GNU/Linux system (but may be
+used by others).

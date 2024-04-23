@@ -1,0 +1,15 @@
+# $Id: POTFILES.in,v 1.3 2000/08/07 02:16:24 astyanax Exp $
+# List of source files containing translatable strings.
+
+# Package source files
+cut.c
+files.c
+global.c
+move.c
+nano.c
+search.c
+winio.c
+
+# Package header files
+nano.h
+proto.h

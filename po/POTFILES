@@ -1,0 +1,9 @@
+	../cut.c \
+	../files.c \
+	../global.c \
+	../move.c \
+	../nano.c \
+	../search.c \
+	../winio.c \
+	../nano.h \
+	../proto.h

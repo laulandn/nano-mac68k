@@ -1,0 +1,5 @@
+Hello there!
+
+This is a test of a version of nano 1.0 for m68k!
+
+It actually sorta kinda works...

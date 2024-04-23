@@ -4,10 +4,18 @@ Unfinished.
 
 For CodeWarrior Pro 6.
 
-Not a "Mac Friendly" applications.
+Uses old public domain curses implmentation, hacked a little (includes original).
+Added a couple curses functions that weren't included in original.
+
+Includes, but does not use curses implementation from MacLynx.
+(Would be used to start adding mouse support and other features, etc etc)
+
+Not a "Mac Friendly" application!
 
 No mouse support.
 No menus.
+Window probably fixed size?
 
 Displays some garbage?
 Assuming because Nano uses some ASCII escape sequences I haven't implemented.
+(See Picture 2.png for example)
